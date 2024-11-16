@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #0093e9, #80d0c7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.registration-container {
+  background-color: #2c3e50;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 350px;
+  position: relative;
+}
+
+.top-toggle-button {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  padding: 10px;
+  background-color: #00cccc;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.top-toggle-button:hover {
+  background-color: #00b3b3;
+}
+
+.form-wrapper {
+  margin-top: 40px;
+}
+
+.form-title {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #7f8c8d;
+  pointer-events: none;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: #34495e;
+  color: white;
+  box-sizing: border-box;
+}
+
+.input-field input::placeholder {
+  color: #7f8c8d;
+}
+
+.register-button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #00e6e6;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.register-button:hover {
+  background-color: #00cccc;
+}
+
+.icon {
+  font-size: 70px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  font-size: 12px;
+  color: #309292;
+  margin-top: -5px;
+  margin-left: 2px;
+  text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+  .registration-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .form-title {
+    font-size: 36px;
+  }
+
+  .top-toggle-button {
+    width: 150px;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .input-field input {
+    padding: 10px 10px 10px 35px;
+  }
+
+  .register-button {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .icon {
+    font-size: 50px;
+  }
+
+  .text {
+    font-size: 10px;
+  }
+}
